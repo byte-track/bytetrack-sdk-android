@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.bt_logout).setOnClickListener {
             BytesTrack.instance.userLogout()
             Toast.makeText(this, "退出账号成功", LENGTH_SHORT).show()
+            Toast.makeText(this, "dev退出账号成功", LENGTH_SHORT).show()
         }
     }
 }
