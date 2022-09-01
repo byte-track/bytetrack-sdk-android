@@ -30,6 +30,8 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "退出账号成功", LENGTH_SHORT).show()
             Toast.makeText(this, "new退出账号成功", LENGTH_SHORT).show()
 
+            Toast.makeText(this, "dev退出账号成功", LENGTH_SHORT).show()
+            Toast.makeText(this, "newdev退出账号成功", LENGTH_SHORT).show()
         }
     }
 }
