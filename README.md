@@ -14,7 +14,7 @@
 
 ```
 dependencies {
-    implementation 'io.github.byte-track:bytetrack-sdk-android:0.0.5'
+    implementation 'io.github.byte-track:bytetrack-sdk-android:1.0.0'
 }
 ```
 
