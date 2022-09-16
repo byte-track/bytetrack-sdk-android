@@ -1,7 +1,7 @@
 package com.bytetrack.sample
 
 import android.app.Application
-import com.bytestrack.android.sdk.BytesTrack
+import com.bytetrack.android.sdk.ByteTrack
 
 /**
  * @Author:      lovelz
@@ -13,7 +13,7 @@ class MainApplication : Application() {
     override fun onCreate() {
         super.onCreate()
 
-        BytesTrack.instance.initMessager(this, "167", "android_sdk09bb2169cf61448c9ef633f7c1a68bb7")
+        ByteTrack.instance.initMessager(this, "your app id", "your app key")
     }
 
 }
