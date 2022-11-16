@@ -14,7 +14,7 @@
 
 ```
 dependencies {
-    implementation 'io.github.byte-track:bytetrack-sdk-android:1.1.3'
+    implementation 'io.github.byte-track:bytetrack-sdk-android:1.1.4'
 }
 ```
 
@@ -85,7 +85,7 @@ android {
 &nbsp;&nbsp;然后，在您的application class的`onCreate()`方法中初始化BytesTrack:
 
 ```
-ByteTrack.instance.initMessager(this, "your app id", "your app key", "your user id")
+ByteTrack.instance.initMessager(this, "your app id", "your app key", "your user id", "your server url")
 ```
 
 <br/>
@@ -96,7 +96,7 @@ ByteTrack.instance.initMessager(this, "your app id", "your app key", "your user 
 class CustomApplication : Application() {
     override fun onCreate() {
         super.onCreate()
-        ByteTrack.instance.initMessager(this, "your app id", "your app key", "your user id")
+        ByteTrack.instance.initMessager(this, "your app id", "your app key", "your user id", "your server url")
     }
 }
 ```
@@ -106,6 +106,7 @@ class CustomApplication : Application() {
 - `your user id：`表示的是用户在您自己业务系统中，的唯一标识信息，比如：用户名 或者 用户id
   - 如果用户作为游客（`游客`代表用户未登陆您的业务系统），`your user id`参数可以不填；
   - 如果用户作为访客(`访客`代表用户登陆了您的业务系统，在您的业务系统中具备唯一身份标识)，`your user id`参数是用户在您业务系统中具备的唯一身份标识信息；
+- `your server url：`如果您是私有化部署方案，可以在“api管理”中获得此项参数。用于表示您系统的访问地址；
     <br/>
 
 &nbsp;&nbsp;然后你需要更新manifest的name信息:
