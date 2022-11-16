@@ -13,7 +13,7 @@ class MainApplication : Application() {
     override fun onCreate() {
         super.onCreate()
 
-        ByteTrack.instance.initMessager(this, "your app id", "your app key")
+        ByteTrack.instance.initMessager(this, "your app id", "your app key", "your user id", "your server url")
     }
 
 }
