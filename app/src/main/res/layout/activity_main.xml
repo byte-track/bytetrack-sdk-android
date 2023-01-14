@@ -55,4 +55,36 @@
         android:text="退出登录"
         android:textSize="15sp"/>
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bytestrack_dp_44"
+        android:layout_marginTop="@dimen/bytestrack_dp_10">
+
+        <TextView
+            android:id="@+id/tv_enter_msg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bytestrack_dp_44"
+            android:text="消息中心"
+            android:textColor="@color/bytestrack_black"
+            android:textSize="17sp"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/bytestrack_dp_18"
+            android:paddingEnd="@dimen/bytestrack_dp_18"/>
+
+        <TextView
+            android:id="@+id/tv_msg_number"
+            android:layout_width="@dimen/bytestrack_dp_20"
+            android:layout_height="@dimen/bytestrack_dp_20"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginEnd="@dimen/bytestrack_dp_30"
+            android:visibility="gone"
+            android:background="@drawable/bytestrack_red_notify_dot"/>
+
+    </FrameLayout>
+
+
 </LinearLayout>
