@@ -23,6 +23,15 @@
             </intent-filter>
         </activity>
 
+        <receiver android:name=".receiver.ByteTrackReceiver"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.bytetrack.notification.RECEIVE_MESSAGE" />
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </receiver>
+
     </application>
 
 </manifest>
