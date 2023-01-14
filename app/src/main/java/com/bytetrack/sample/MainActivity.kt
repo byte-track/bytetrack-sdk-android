@@ -3,6 +3,7 @@ package com.bytetrack.sample
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import android.widget.Toast.LENGTH_SHORT
 import androidx.appcompat.app.AppCompatActivity
@@ -30,5 +31,11 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "退出账号成功", LENGTH_SHORT).show()
             Toast.makeText(this, "dev退出账号成功", LENGTH_SHORT).show()
         }
+
+        val tvMsg = findViewById<TextView>(R.id.tv_enter_msg)
+        tvMsg.setOnClickListener {
+            ByteTrack.instance.enterNotificationCenter()
+        }
+
     }
 }
